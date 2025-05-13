@@ -89,5 +89,18 @@
       </div>
       
     </div>
-    
+    <div class="col-8 offset-3 mb-3">
+        <h3>Where you'll be</h3>
+        <div id="map"></div>
+    </div>
 </div>
+<script>
+  let mapToken = "<%= process.env.MAP_TOKEN %>";
+  mapboxgl.accessToken=mapToken;
+  const map=new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/streets-v12",
+    center: [-74.5, 40],
+    zoom: 9,
+  });
+</script>
