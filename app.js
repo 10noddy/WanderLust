@@ -61,9 +61,9 @@ const sessionOptions ={
 }
 //use before requires of listing and reviews in line 59
 // first flash then routes
-app.get("/", (req, res) => {
-    res.send("hi ,i am root");
-});
+// app.get("/", (req, res) => {
+//     res.send("hi ,i am root");
+// });
 
 app.use(session(sessionOptions));
 app.use(flash());
