@@ -27,8 +27,8 @@ const userRouter = require("./routes/user.js");
 
 //added commnet in line 12
 
-const mongo_url= "mongodb://127.0.0.1:27017/wanderlust";
-
+ const mongo_url= "mongodb://127.0.0.1:27017/wanderlust";
+// const dbUrl= process.env.ATLASDB_URL;
 main()
 .then(() => {
     console.log("connected to db");
